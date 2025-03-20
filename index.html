@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+    <title>Sakura House</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="glav">
+        <header>
+                <nav class="menuha">
+                    <ul>
+                        <li><img src="img/logo.png" class="logo"></li>
+                        <li><a href="index.html">ГЛАВНАЯ</a></li>
+                        <li><a href="pages/menu.html">МЕНЮ</a></li>
+                        <li><a href="pages/orestorane.html">О РЕСТОРАНЕ</a></li>
+                        <li><a href="pages/novosti.html">НОВОСТИ</a></li>
+                    </ul>
+                </nav>
+                <label>
+                    <input type="checkbox">
+                    <span class="menu"> <span class="hamburger"></span> </span>
+                    <ul>
+                        <li><a href="index.html">ГЛАВНАЯ</a></li>
+                        <li><a href="pages/menu.html">МЕНЮ</a></li>
+                        <li><a href="pages/orestorane.html">О РЕСТОРАНЕ</a></li>
+                        <li><a href="pages/novosti.html">НОВОСТИ</a></li>
+                    </ul>
+                </label>
+        </header>
+        <a href="#a"><img src="img/down.png" class="strel"></a>
+    </div>  
+    <p id="a" style="opacity: 0; margin-bottom: 120px;">a</p>
+    <div class="block">
+        <div class="centr">
+            <img src="img/icons8-местоположение-100.png" >
+            <div class="rect">Верхняя аллея, 3 стр. 1. <br>Москва.</div>
+        </div>
+        <div class="centr">
+            <img src="img/icons8-телефон-100.png">
+            <div class="rect">Телефон:<br> +7 925 333 94 59</div>
+        </div>
+        <div class="centr">
+            <img src="img/icons8-часы-100.png">
+            <div class="rect">Мы открыты:<br>10.00 - 22.00</div>
+        </div>  
+    </div>     
+    <div class="rect bol">Мы понравимся вам своей легкой атмосферой, уровнем кухни и подачей блюд. Мы любим  традиционность в интерьере, хорошую музыку и неповторимый рамен нашего шефа, Эдуарда Корсунского.</div>
+    <img src="img/5280945754434825807-Photoroom.png" class="sakura">
+    <div class="otstup">
+        <div class="block three">
+            <img src="img/Без названия (4) (2).jpg">
+            <img src="img/Airbrush-Image-Enhancer.jpg">
+        </div>
+        <div class="block three">
+            <img src="img/Airbrush-Image-Enhancer (2).jpg">
+            <img src="img/snapedit_1730959287239.jpeg">
+        </div>
+        <div class="block three">
+            <img src="img/Airbrush-Image-Enhancer (4).jpg">
+            <img src="img/Airbrush-Image-Enhancer (3).jpg">
+        </div>
+    </div>
+    <div class="otstup">
+        <div class="gradient">
+        <img src="img/Airbrush-Image-Enhancer (5).png" class="shef">
+        <div class="rect bol abs">Эдуард ученик известного шеф повара Ерика Крауа. Принимает участие в крупнейших воркшопах, работал в ресторанах Франции, Бельгии и Финляндии. У Эдуарда всегда свежее авторское видение меню.</div>
+        </div>
+    </div>
+    <h1>Форма бронирования столика</h1>
+    <form id="bookingForm">
+        <div class="size">Имя:</div>
+        <input type="text" id="name" required>
+
+        <div class="size">Телефон:</div>
+        <input type="text" id="phone" placeholder="+7 (999) 999-99-99" required pattern="^\+7 \(\d{3}\) \d{3}-\d{2}-\d{2}$">
+
+        <div class="size">Количество гостей:</div>
+        <input type="number" id="guests" min="1" max="20" required>
+
+        <div class="size">Дата:</div>
+        <select id="date" required>
+            <option value="">Выберите дату</option>
+            <option value="2024-12-12">12 декабря 2024</option>
+            <option value="2024-12-13">13 декабря 2024</option>
+            <option value="2024-12-14">14 декабря 2024</option>
+            <option value="2024-12-15">15 декабря 2024</option>
+            <option value="2024-12-16">16 декабря 2024</option>
+            <option value="2024-12-17">17 декабря 2024</option>
+        </select>
+
+        <div class="size">Время:</div>
+        <select id="time" required>
+            <option value="">Выберите время</option>
+            <option value="18:00">10:00</option>
+            <option value="18:00">11:00</option>
+            <option value="18:00">12:00</option>
+            <option value="18:00">13:00</option>
+            <option value="18:00">14:00</option>
+            <option value="18:00">15:00</option>
+            <option value="18:00">16:00</option>
+            <option value="18:00">17:00</option>
+            <option value="18:00">18:00</option>
+            <option value="19:00">19:00</option>
+            <option value="20:00">20:00</option>
+        </select>
+
+        <button type="submit">Отправить</button>
+        <button type="button" id="clearButton">Очистить</button>
+        <div id="errorMessage" class="error"></div>
+    </form>
+
+    <footer>
+        <nav>
+            <ul class="nav ul f">
+                <li><img src="img/logo.png" class="logo footer"></li>
+                <li style="padding-left: 65%"><img src="img/vk (1).png"></li>
+                <li><img src="img/telegram.png"></li>
+                <li><img src="img/whatsapp.png"></li>
+            </ul>
+        </nav>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>
